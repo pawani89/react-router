@@ -51,17 +51,17 @@ stages:
         displayName: Deploy
         environment: $(environmentName)
         pool:
-        vmImage: $(vmImageName)
+          vmImage: $(vmImageName)
         strategy:
           runOnce:
             deploy:
               steps:
                 - task: AzureWebApp@1
-              displayName: "Azure Web App Deploy: nodejs-cicd-16353"
-              inputs:
-                azureSubscription: $(azureSubscription)
-                appType: webAppLinux
-                appName: $(webAppName)
-                runtimeStack: "NODE|16-lts"
-                package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-                startUpCommand: "npm run start"
+                  displayName: "Azure Web App Deploy: nodejs-cicd-16353"
+                  inputs:
+                    azureSubscription: $(azureSubscription)
+                    appType: webAppLinux
+                    appName: $(webAppName)
+                    runtimeStack: "NODE|16-lts"
+                    package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+                    startUpCommand: "npm run start"
