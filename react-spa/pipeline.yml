@@ -5,7 +5,7 @@ variables:
   azureSubscription: "442f11da-927f-44b8-b39b-7e4e1ea84f71"
 
   # Web app name
-  webAppName: "eact-router-21966"
+  webAppName: "react-router-21966"
 
   # Environment name
   environmentName: "react-router-21966"
