@@ -2,13 +2,13 @@ trigger:
   - main
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: "442f11da-927f-44b8-b39b-7e4e1ea84f71"
+  azureSubscription: "00001111-0000-1111-2222-000011112222"
 
   # Web app name
   webAppName: "react-router-21966"
 
   # Environment name
-  environmentName: "react-router-21966.azurewebsites"
+  environmentName: "react-router-21966"
 
   # Agent VM image name
   vmImageName: "ubuntu-latest"
