@@ -2,7 +2,7 @@ trigger:
   - main
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: "00001111-0000-1111-2222-000011112222"
+  azureSubscription: "442f11da-927f-44b8-b39b-7e4e1ea84f71"
 
   # Web app name
   webAppName: "react-router-21966"
