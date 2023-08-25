@@ -8,7 +8,7 @@ variables:
   webAppName: "react-router-21966"
 
   # Environment name
-  environmentName: "http://react-router-21966.azurewebsites.net/"
+  environmentName: "react-router-21966.azurewebsites"
 
   # Agent VM image name
   vmImageName: "ubuntu-latest"
