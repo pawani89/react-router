@@ -1,14 +1,16 @@
 trigger:
-  - master
+- master
 
 pool:
-  vmImage: unbuntu-latest
+ vmImages:ubuntu-latest
 
-steps:
-  - script: echo Hello Worl!
-    displayName: "Run a one line script"
+stages:
+  - stage: "Stage A"
+    jobs:
+      - job: 'JobA'
+        steps:
+          - script: echo 'Ascript'
+             
+                     
+            
 
-  - script: |
-      echo Akansha!!
-      echo another line
-    displayName: "run two line of script"
