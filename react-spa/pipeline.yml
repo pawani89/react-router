@@ -5,7 +5,7 @@ pool:
  vmImages:ubuntu-latest
 
 stages:
-  - stage: "Stage A"
+  - stage: 'StageA'
     jobs:
       - job: 'JobA'
         steps:
